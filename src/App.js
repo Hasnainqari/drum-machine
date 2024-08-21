@@ -74,20 +74,26 @@ const App = () => {
   };
 
   return (
-    <div id="drum-machine">
-      <Display display={display} />
-      <div id="pads">
-        {drumPads.map((pad) => (
-          <DrumPad
-            key={pad.key}
-            id={pad.id}
-            text={pad.key}
-            src={pad.src}
-            handleClick={handleClick}
-          />
-        ))}
+    <>
+      <div id="drum-machine">
+        <h1>Drum Machine</h1>
       </div>
-    </div>
+      <br />
+      <div id="drum-machine">
+        <Display display={display} />
+        <div id="pads">
+          {drumPads.map((pad) => (
+            <DrumPad
+              key={pad.key}
+              id={pad.id}
+              text={pad.key}
+              src={pad.src}
+              handleClick={handleClick}
+            />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
