@@ -76,7 +76,7 @@ const App = () => {
   return (
     <>
       <div id="drum-machine">
-        <h1>Drum Machine</h1>
+        <h2>React Drum Machine</h2>
       </div>
       <br />
       <div id="drum-machine">
